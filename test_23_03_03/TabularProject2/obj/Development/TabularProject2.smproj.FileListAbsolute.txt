@@ -1,0 +1,7 @@
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\bin\Model.asdatabase
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\bin\Model.deploymenttargets
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\bin\Model.deploymentoptions
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\obj\Development\TabularProject2.smproj.CoreCompileInputs.cache
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\obj\Development\Model.asdatabase
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\obj\Development\Model.deploymentoptions
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\TabularProject2\obj\Development\Model.deploymenttargets

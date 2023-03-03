@@ -1,0 +1,10 @@
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\bin\Debug\calc.dacpac
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\bin\Debug\test_23_03_03.dll
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\bin\Debug\test_23_03_03.pdb
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\calc.sqlproj.AssemblyReference.cache
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\Model.xml
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\refactor.xml
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\postdeploy.sql
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\predeploy.sql
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\test_23_03_03.dll
+D:\VLAD\Работа\2023\ГПМ\test_23_03_03\test_23_03_03\obj\Debug\test_23_03_03.pdb

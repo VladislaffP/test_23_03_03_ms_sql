@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="3653afb2-1f3e-436a-beed-a1f0e8bcb560" ChangeDateTime="03/03/2023 13:33:19">
+    <Property Name="ElementName" Value="[dbo].[Countries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Countries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="country_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="093f54c2-51c0-4017-b964-cbc796093b8d" ChangeDateTime="03/03/2023 13:34:27">
+    <Property Name="ElementName" Value="[dbo].[languages].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[languages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="language_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="87c1d03e-93bd-4d15-a26a-3f024ecb4617" ChangeDateTime="03/03/2023 13:37:54">
+    <Property Name="ElementName" Value="[dbo].[fact_table].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[fact_table]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id_fact" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="94e9dc6a-1fb1-4656-ad0d-fafbfa01b616" ChangeDateTime="03/03/2023 13:39:02">
+    <Property Name="ElementName" Value="[dbo].[stage_data_load].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[stage_data_load]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="country" />
+  </Operation>
+</Operations>

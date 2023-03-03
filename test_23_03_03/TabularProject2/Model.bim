@@ -1,0 +1,159 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1400,
+  "model": {
+    "culture": "ru-RU",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/DESKTOP-TS4OAM8;calc",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "DESKTOP-TS4OAM8",
+            "database": "calc"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "options": {},
+        "credential": {
+          "AuthenticationKind": "ServiceAccount",
+          "kind": "SQL",
+          "path": "desktop-ts4oam8;calc",
+          "EncryptConnection": false
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "Countries",
+        "columns": [
+          {
+            "name": "country_id",
+            "dataType": "int64",
+            "sourceColumn": "country_id"
+          },
+          {
+            "name": "country_name",
+            "dataType": "string",
+            "sourceColumn": "country_name"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-TS4OAM8;calc\",",
+                "    dbo_Countries = Source{[Schema=\"dbo\",Item=\"Countries\"]}[Data]",
+                "in",
+                "    dbo_Countries"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_table",
+        "columns": [
+          {
+            "name": "Id_fact",
+            "dataType": "int64",
+            "sourceColumn": "Id_fact"
+          },
+          {
+            "name": "id_country",
+            "dataType": "int64",
+            "sourceColumn": "id_country"
+          },
+          {
+            "name": "id_language",
+            "dataType": "int64",
+            "sourceColumn": "id_language"
+          },
+          {
+            "type": "calculated",
+            "name": "Вычисляемый столбец 1",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "COUNT([Id_fact])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-TS4OAM8;calc\",",
+                "    dbo_fact_table = Source{[Schema=\"dbo\",Item=\"fact_table\"]}[Data]",
+                "in",
+                "    dbo_fact_table"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "languages",
+        "columns": [
+          {
+            "name": "language_id",
+            "dataType": "int64",
+            "sourceColumn": "language_id"
+          },
+          {
+            "name": "language_name",
+            "dataType": "string",
+            "sourceColumn": "language_name"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/DESKTOP-TS4OAM8;calc\",",
+                "    dbo_languages = Source{[Schema=\"dbo\",Item=\"languages\"]}[Data]",
+                "in",
+                "    dbo_languages"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "f798bbde-61f8-4e58-9cd3-3ddd1bbf4357",
+        "fromTable": "fact_table",
+        "fromColumn": "id_country",
+        "toTable": "Countries",
+        "toColumn": "country_id"
+      },
+      {
+        "name": "549b9c70-6384-4e6e-8c8a-5b78afd5420c",
+        "fromTable": "fact_table",
+        "fromColumn": "id_language",
+        "toTable": "languages",
+        "toColumn": "language_id"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "500"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
